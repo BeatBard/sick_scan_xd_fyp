@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="transform_cloud_POS_000_DIST1" args="0 0 0 0 0 0 base_link cloud_POS_000_DIST1 10" />
+  <node pkg="tf" type="static_transform_publisher" name="transform_cloud_NEG_250_DIST1" args="0 0 0 0 0 0 base_link cloud_NEG_250_DIST1 10" />
+  <node pkg="tf" type="static_transform_publisher" name="transform_cloud_POS_250_DIST1" args="0 0 0 0 0 0 base_link cloud_POS_250_DIST1 10" />
+</launch>

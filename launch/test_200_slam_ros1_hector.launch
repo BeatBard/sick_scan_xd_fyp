@@ -14,6 +14,10 @@
     <node pkg="tf" type="static_transform_publisher" name="laser_baselaser" args="0 0 0 0 0 0 1 base_laser laser 100"/>
     <!-- Transformation to prepare SLAM -->
     <node pkg="tf" type="static_transform_publisher" name="laserscan_layer_0_base_laser" args="0 0 0 0 0 0 1 base_laser $(arg scan_layer_0_frame_id) 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="static_transform_cloud_pos_250" args="0 0 0 0 0 0 base_link cloud_POS_250_DIST1 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="static_transform_cloud_neg_250" args="0 0 0 0 0 0 base_link cloud_NEG_250_DIST1 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="static_transform_cloud_neg_500" args="0 0 0 0 0 0 base_link cloud_NEG_500_DIST1 100"/>
+
     <node pkg="tf" type="static_transform_publisher" name="cloud_base_laser" args="0 0 0 0 0 0 1 base_laser $(arg cloud_frame_id) 100"/>
     <node pkg="tf" type="static_transform_publisher" name="base_laser_to_base_link" args="0 0 0 0 0 0 1 base_link base_laser 100"/>
     <node pkg="tf" type="static_transform_publisher" name="base_link_to_base_footprint" args="0 0 0 0 0 0 1 base_footprint base_link 100"/>
