@@ -27,11 +27,11 @@
         <param name="update_min_a" value="0.2"/>
 
         <!-- **Adjusted Odometry Noise Parameters** -->
-        <param name="odom_alpha1" value="0"/> <!-- Rotational noise during rotation -->
-        <param name="odom_alpha2" value="0"/> <!-- Rotational noise during translation -->
-        <param name="odom_alpha3" value="0"/>  <!-- Translational noise during translation -->
-        <param name="odom_alpha4" value="0"/>  <!-- Translational noise during rotation -->
-        <param name="odom_alpha5" value="0"/> <!-- Additional rotational noise -->
+        <param name="odom_alpha1" value="0.00000001"/> <!-- Rotational noise during rotation -->
+        <param name="odom_alpha2" value="0.00000001"/> <!-- Rotational noise during translation -->
+        <param name="odom_alpha3" value="0.00000001"/>  <!-- Translational noise during translation -->
+        <param name="odom_alpha4" value="0.00000001"/>  <!-- Translational noise during rotation -->
+        <param name="odom_alpha5" value="0.00000001"/> <!-- Additional rotational noise -->
 
         <!-- **Additional Sensor Model Parameters** -->
         <param name="sigma_hit" value="0.1"/> <!-- Tightened sensor matching -->
