@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
     <!-- Load the pre-saved map -->
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find sick_scan_xd)/maps/robo_lab.yaml" output="screen"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find sick_scan_xd)/maps/r_lab2.yaml" output="screen"/>
     
     <!-- AMCL Node -->
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
